@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Symfony : Framework PHP - Bonnes Pratiques</title>
+    <link rel="stylesheet" href="CSS/commun.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="text">
+            <img src="IMAGES/logoIntroduction.svg" alt="logoIntroduction" class="logo">
+                <h1>Bonnes Pratiques</h1>
+            </div>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+    </header>
+    <nav class="navmenu">
+        <a href="index.html">Introduction à Symfony</a>
+        <a href="etapesConfiguration.html">Installation et Configuration de Symfony</a>
+        <a href="bonnesPratiques.html">Bonnes Pratiques</a>
+    </nav>
+    <article class="veilleTechno">
+        <h3>C'est quoi la "Veille Technologique"?</h3>
+        <p></p>
+        <div class="defVeille">
+            <img src="IMAGES/veilleTechno.webp" alt="veilleTechno" class="veilleTechnoImg">
+            <p>La veille technologique est un processus cyclique de gestion de l'information, tendant à l'automatisation, 
+            qui a pour objectif de connaître les nouveautés et les tendances dans les domaines scientifiques et techniques.</p>
+            <p></p>
+            <p>Dans le cas de cette veille, je vais vous parler d'un framework de PHP nommé "Symfony", en utilisant l'agrégateur de flux
+            nommé "Inoreader" pour source venant de "SlideShare.net".</p>
+        </div>
+    </article>
+    <article class="bonnesPratiques">
+        <div class="select">
+            <a href="#bonnesBases">Les bonnes bases pour comprendre les bonnes pratiques</a>
+            <a href="#bonnesPratiques">Les bonnes pratiques en question</a>
+        </div>
+        <p></p>
+        <p></p>
+        <div id="bonnesBases">
+            <h3>1) Les bonnes bases pour comprendre les bonnes pratiques</h3>
+            <p></p>
+            <p></p>
+            <p>Il faut d’abord penser que les bonnes pratiques, ça ne veulent pas dire que c’est un ensemble de tutoriels. C’est juste une 
+            liste à valider pour que vous puissiez déployer votre application sans crainte. Elle a aussi pour but de vous conseiller et 
+            guider, en tant que développeur de manière à uniformiser votre code.</p>
+        </div>
+        <div id="bonnesPratiques">
+            <h3>2) Les bonnes pratiques en question</h3>
+            <ol>
+                <li>Organiser votre application : Pour être sûr que vous ne perdez pas votre temps à coder, pensez à mettre quels fichiers 
+                dans quel dossier. Vous pouvez prendre l’exemple du II.4 dans l’architecture d’un projet Symfony.</li>
+                <li>
+                    Les contrôleurs doivent respecter la règle de « 5-10-20 » :
+                    <ul>
+                        <li>5 Variables par méthode</li>
+                        <li>10 méthodes maximum par contrôleur</li>
+                        <li>20 lignes de codes par méthodes</li>
+                    </ul>
+                    Si vous ne respectez pas cette règle, vous aurez du mal à corriger les bugs qui peuvent exister.
+                </li>
+                <li>
+                    Assurez-vous de faire des tests unitaires ! Ils peuvent être utiles en cas de pannes ou de failles de sécurité. 
+                    Les outils que vous pouvez utiliser pour les tests sont :
+                    <ul>
+                        <li>PHPUnit et PhpSpec pour le PHP</li>
+                        <li>Mink (Qui est une librairie de PHPUnit) et CasperJS pour le JavaScript</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </article>
+    <footer class="footer">
+        <p>Conçu pour la Veille Technologique - Romain MOUROUVIN SIO1B</p>
+    </footer>
+</body>
+</html>

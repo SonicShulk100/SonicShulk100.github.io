@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+/*
+L'arrière plan des pages
+*/
+*{
+    background-color : rgb(57, 185, 42);
+    margin: 0;
+    color: black;
+}
+
+body{
+    font-family: 'calibri', sans-serif;
+}
+/*
+Footer
+*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+}
+
+/*
+Definition de la Veille techno
+*/
+.veilleTechno h3{
+    font-size : 1.9em;
+    text-align: center;
+    text-decoration : underline;
+}
+
+.veilleTechno{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.veilleTechno p{
+    margin: 20px;
+}
+
+.veilleTechno .defVeille{
+    font-size : 1em;
+}
+/*
+NavMenu
+*/
+.navmenu a:hover {
+    color: blue;
+}
+.navmenu{
+    margin-top : 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navmenu a{
+    text-decoration: none;
+    display: block;
+    padding-left: 50px;
+    font-family: 'consolas', sans-serif;
+    font-size: 25px;
+    align-items: center;
+}
+/*
+Taille et titre de la page
+*/
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size : 3em;
+    font-family:'consolsas', sans-serif;
+    color : white;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*
+L'introduction
+*/
+
+.php img{
+    width: 25%;
+}
+
+.composer img{
+    width: 25%;
+}
+
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size : 23px;
+}
+
+.select a{
+    text-decoration : none;
+}
+
+.select a:hover{
+    color : blue;
+}
+
+#defSymfony h2{
+    font-size : 1.9em;
+    text-decoration : underline;
+    margin-top : 50px;
+    text-align: center;
+}
+#defSymfony p{
+    margin: 15px;
+}
+
+#fonctionnementSymfony h2{
+    font-size : 1.9em;
+    text-decoration : underline;
+    margin-top : 50px;
+    text-align: center;
+}
+
+#fonctionnementSymfony p{
+    margin-top : 15px;
+    margin-bottom : 40px;
+}
+
+#fonctionnementSymfony p{
+    padding: 15px;
+    display:block;
+}
+
+
+
+/*
+Installation Symfony - Prerequis
+*/
+
+#prerequis h3{
+    font-size : 1.9em;
+    text-decoration : underline;
+    margin-top : 50px;
+    text-align: center;
+}
+
+#prerequis p{
+    padding : 30px;
+    margin-bottom: 50px;
+}
+
+#prerequis ul li{
+    margin-top : 15px;
+    margin-bottom : 15px;
+}
+
+/*
+Installation
+*/
+
+#etapeInstallation h3{
+    font-size : 1.9em;
+    text-decoration : underline;
+    margin-top : 50px;
+    text-align: center;
+}
+
+#etapeInstallation{
+    padding: 20px;
+}
+
+ol li{
+    margin-top : 15px;
+    margin-bottom : 15px;
+}
+
+/*
+Etapes de configuration
+*/
+
+#etapeConfiguration{
+    padding: 20px;
+}
+
+#etapeConfiguration h3{
+    font-size : 1.9em;
+    text-decoration : underline;
+    margin-top : 50px;
+    text-align: center;
+}
+
+#etapeConfiguration code{
+    font-size : 12px;
+}
+
+/*
+Exemple d'arborescence des projets Symfony
+*/
+
+#exmpleArborescenceProjet h3{
+    font-size : 1.9em;
+    text-decoration : underline;
+    margin-top : 50px;
+    text-align: center;
+}
+
+.code {
+    justify-content: space-around;
+    display: flex;
+    font-size : 20px;
+    margin-right : 75px;
+}
+
+
+/*
+Bonnes Bases
+*/
+
+#bonnesBases h3{
+    font-size : 1.9em;
+    text-decoration : underline;
+    margin-top : 50px;
+    text-align: center;
+}
+
+#bonnesBases p{
+    padding : 30px;
+}
+
+
+/*
+Bonnes Pratiques
+*/
+#bonnesPratiques h3{
+    font-size : 1.9em;
+    text-decoration : underline;
+    margin-top : 50px;
+    text-align: center;
+}
+
+#bonnesPratiques p{
+    margin:20px;
+}
+
+.FullStack img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.footer p{
+    font-size : 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+    color: white;
+}
+
+.config code{
+    justify-content: space-around;
+    display: flex;
+    font-size : 20px;
+    margin-right : 75px;
+}
+
+.veilleTechnoImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

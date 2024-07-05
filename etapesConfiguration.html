@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Symfony : Framework PHP - Etapes de Configuration</title>
+<link rel="stylesheet" href="CSS/commun.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="text">
+            <img src="IMAGES/logoIntroduction.svg" alt="logoIntroduction" class="logo">
+                <h1>Etapes de Configuration</h1>
+            </div>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+    </header>
+    <nav class="navmenu">
+        <a href="index.html">Introduction à Symfony</a>
+        <a href="etapesConfiguration.html">Installation et Configuration de Symfony</a>
+        <a href="bonnesPratiques.html">Bonnes Pratiques</a>
+    </nav>
+    <article class="veilleTechno">
+        <h3>C'est quoi la "Veille Technologique"?</h3>
+        <p></p>
+        <div class="defVeille">
+            <img src="IMAGES/veilleTechno.webp" alt="veilleTechno" class="veilleTechnoImg">
+            <p>La veille technologique est un processus cyclique de gestion de l'information, tendant à l'automatisation, 
+            qui a pour objectif de connaître les nouveautés et les tendances dans les domaines scientifiques et techniques.</p>
+            <p></p>
+            <p>Dans le cas de cette veille, je vais vous parler d'un framework de PHP nommé "Symfony", en utilisant l'agrégateur de flux
+            nommé "Inoreader" pour source venant de "SlideShare.net".</p>
+        </div>
+    </article>
+    <article class="installationSymfony">
+        <div class="select">
+            <a href="#prerequis">Prérequis</a>
+            <a href="#etapeInstallation">Etapes d’installation</a>
+            <a href="#etapeConfiguration">Etapes de configuration</a>
+            <a href="exmpleArborescenceProjet">Exemple d'arborescence d'un projet</a>
+        </div>
+        <p></p>
+        <p></p>
+        <div id="prerequis">
+            <h3>1) Les prérequis</h3>
+            <p>Si vous voulez créer un projet Symfony, vous devez avoir :</p>
+            <ul>
+                <li>Un serveur web (Apache, Tomcat, WAMP (Windows Apache MySQL PHP), etc) : C’est là que fonctionnera votre 
+                application construite dans Symfony. Je vous conseille d'installer un WAMP car c'est là où vous écrivez du 
+                code en PHP dans le "localhost".</li>
+                <img src="IMAGES/wamp.webp" alt="wamp">
+                <li>Un moteur de bases de données (MySQL, PostgreSQL, SQLite ou tout autre PDO compatible aux bases de données) : 
+                Pourquoi avoir une base de données est-elle importante pour votre projet Symfony? C'est parce qu'un projet Symfony
+                se base dans un modèle nommé "MVC" (voir "Introduction à Symfony" pour les détails).</li>
+                <li>Un IDE ("Integrated Development Environment") : C'est là où vous ecrivez du code PHP. Les IDEs les plus connus sont:
+                    <ul>
+                        <li><a href="https://code.visualstudio.com/">Visual Studio Code</a> créé par Microsoft</li>
+                        <li><a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a> créé par JetBrains (PAYANT!!!)</li>
+                    </ul>
+                </li>
+                <li>PHP 5.2.4 ou plus : Symfony est un framework qui n'est disponible que sur la version 5.2.4 ou plus. Vous pouvez le 
+                téléchargez en cliquant <a href="https://www.php.net/downloads.php"> sur ce lien.</a></li>
+                <div class="php">
+                    <img src="IMAGES/php.png" alt="php">
+                </div>
+                <li>Le CLI ("Command Line Interface") de Symfony : Optionnel mais très util car il peut vous donner les outils nécessaires
+                pour développer et démarrer les applications en local (Compatible uniquement en version 8.2 ou plus).</li>
+                <li><a href="https://getcomposer.org/">Gestionnaire de dépendances libre « Composer » </a> : Ce gestionnaire permet d'installer les packets PHP qui sont nécéssaires
+                pour votre application web.</li>
+                <div class="composer">
+                    <img src="IMAGES/composer.png" alt="composer">
+                </div>
+                
+            </ul>
+        </div>
+        <div id="etapeInstallation">
+            <h3>2) Etapes d'installation</h3>
+            <p></p>
+            <ol>
+                <li>Installer un serveur web.</li>
+                <li>Installer un moteur de base de données.</li>
+                <li>Installer le langage PHP.</li>
+                <li>Installer l’IDE de votre choix</li>
+                <li>Installer le CLI de Symfony et Composer</li>
+            </ol>
+        </div>
+        <div id="etapeConfiguration">
+            <h3>3) Etapes de Configuration</h3>
+            <p></p>
+            <p></p>
+            <ol>
+                <li>Après avoir installer les prérequis, configurez l'accès au PHP dans votre IDE</li>
+                <li>Pour créer un projet, allez dans le dossier "www" de votre WAMP et tapez la commande:
+                <pre class="config"><code>composer create-project symfony/skeleton:&#x22;7.1.*&#x22; my_project_directory</code></pre>
+                </li>
+                <li>Pour installer les packets, vous devez tapez la commande (Dans le dossier du projet) : 
+                <pre class="config"><code>composer require logger</code></pre>(Ceci n'est qu'un exemple. Il existe plusieurs packets 
+                que vous pouvez utiliser)
+                </li>
+                <li>Après, vous pouvez commencer à coder votre propre application web</li>
+            </ol>
+        </div>
+        <div id="exmpleArborescenceProjet">
+            <h3>4) Exemple d'arborescence d'un projet</h3>
+            <p></p>
+            <p></p>
+            <p>Voici les exmples d'arborescence des projets Symfony4, Symfony3 et Symfony2 respectivement selon la treizième diapositive de 
+            Imran YAZIDI:</p>
+            <div class="code">
+                <pre>
+                <code>
+                .
+                &#x251C;&#x2500;&#x2500; etc
+                &#x251C;&#x2500;&#x2500; src/
+                &#x2502;   &#x2514;&#x2500;&#x2500; Kernel.php
+                &#x251C;&#x2500;&#x2500; templates
+                &#x251C;&#x2500;&#x2500; tests
+                &#x251C;&#x2500;&#x2500; var/
+                &#x2502;   &#x251C;&#x2500;&#x2500; cache
+                &#x2502;   &#x2514;&#x2500;&#x2500; logs
+                &#x251C;&#x2500;&#x2500; public/
+                &#x2502;   &#x2514;&#x2500;&#x2500; index.php
+                &#x251C;&#x2500;&#x2500; .env
+                &#x2514;&#x2500;&#x2500; Makefile
+                </code>
+                </pre>
+                
+                <pre>
+                <code>
+                .
+                &#x251C;&#x2500;&#x2500; app/
+                &#x2502;   &#x251C;&#x2500;&#x2500; AppKernel.php
+                &#x2502;   &#x251C;&#x2500;&#x2500; config/
+                &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; parameters.yml
+                &#x2502;   &#x2514;&#x2500;&#x2500; Resources/
+                &#x2502;       &#x2514;&#x2500;&#x2500; views
+                &#x251C;&#x2500;&#x2500; src/
+                &#x2502;   &#x251C;&#x2500;&#x2500; AppBundle
+                &#x2502;   &#x2514;&#x2500;&#x2500; Tests
+                &#x251C;&#x2500;&#x2500; var/
+                &#x2502;   &#x251C;&#x2500;&#x2500; cache
+                &#x2502;   &#x2514;&#x2500;&#x2500; logs
+                &#x2514;&#x2500;&#x2500; web/
+                    &#x251C;&#x2500;&#x2500; app_dev.php
+                    &#x2514;&#x2500;&#x2500; app.php
+                </code>
+                </pre>
+                
+                <pre>
+                <code>
+                .
+                &#x251C;&#x2500;&#x2500; app/
+                &#x2502;   &#x251C;&#x2500;&#x2500; AppKernel.php
+                &#x2502;   &#x251C;&#x2500;&#x2500; cache
+                &#x2502;   &#x251C;&#x2500;&#x2500; config/
+                &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; parameters.yml
+                &#x2502;   &#x2514;&#x2500;&#x2500; logs
+                &#x251C;&#x2500;&#x2500; src/
+                &#x2502;   &#x251C;&#x2500;&#x2500; AppBundle
+                &#x2502;   &#x2514;&#x2500;&#x2500; Resources/
+                &#x2502;       &#x2514;&#x2500;&#x2500; Tests
+                &#x2514;&#x2500;&#x2500; web/
+                    &#x251C;&#x2500;&#x2500; app_dev.php
+                    &#x2514;&#x2500;&#x2500; app.php
+                </code>
+                </pre>
+            </div>
+      </div>
+            
+    </article>
+    <footer class="footer">
+        <p>Conçu pour la Veille Technologique - Romain MOUROUVIN SIO1B</p>
+    </footer>
+</body>
+</html>

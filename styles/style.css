@@ -4,3 +4,35 @@
     margin-right: 200px;
     font-size: 45px;
 }
+
+body{
+    background-color: darkcyan;
+}
+
+.bouton{
+    background-color: cadetblue;
+    font-size: 25px;
+    font-family: Consolas, sans-serif;
+    text-decoration: none;
+    display: inline-flex;
+    margin-right: 25px;
+    color: black;
+}
+
+.infoPersonnels p{
+    font-size: 18px;
+    text-align: center;
+    font-family: "Consolas", "Courier", "Courier New", monospace;
+    text-decoration: underline;
+    color: bisque;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black
+}
+
+a:hover{
+    text-decoration: none;
+    color: bisque;
+}

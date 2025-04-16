@@ -3,10 +3,22 @@
     display: inline-flex;
     margin-right: 200px;
     font-size: 45px;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    justify-items: center;
 }
 
 body{
     background-color: darkcyan;
+}
+
+h1{
+    justify-content: center;
+    font-family: "Consolas", "Courier", "Courier New", monospace;
+    text-decoration: underline;
+    color: #40195b;
+    text-align: center;
 }
 
 .bouton{
@@ -19,14 +31,6 @@ body{
     color: black;
 }
 
-.infoPersonnels p{
-    font-size: 18px;
-    text-align: center;
-    font-family: "Consolas", "Courier", "Courier New", monospace;
-    text-decoration: underline;
-    color: bisque;
-}
-
 a, a:visited{
     text-decoration: none;
     color: black
@@ -35,4 +39,64 @@ a, a:visited{
 a:hover{
     text-decoration: none;
     color: bisque;
+}
+
+.projetsScolaires{
+    text-decoration: none;
+    
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    padding: 5px;
+
+
+    p{
+        display: inline-block;
+        text-decoration: none;
+        background-color:cadetblue;
+        margin-top: 25px;
+        font-family: "Consolas", "Courier", "Courier New", monospace;
+        font-weight: bolder;
+    }
+}
+
+.interets{
+    font-family: "Consolas", "Courier", "Courier New", monospace;
+    text-decoration: none;
+    color: azure;
+}
+
+hr{
+    height: 5px;
+    border: none;
+    background-color: darkblue;
+}
+
+.paragraph{
+    font-family: "Consolas", "Courier", "Courier New", monospace;
+    text-decoration: none;
+    color: azure;
+}
+
+.paragraph p{
+    font-size: 18px;
+}
+
+h2{
+    text-align: center;
+    font-family: "Consolas", "Courier", "Courier New", monospace;
+    text-decoration: underline;
+    color: bisque;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
